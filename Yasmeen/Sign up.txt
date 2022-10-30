@@ -6,7 +6,7 @@
 		<title>Sign Up</title>
 	</head>
 	<body>
-	<img src="background2.png" alt="Log In" width="326.96pt" height="271pt">
+	<img src="background2.png" alt="Log In" width="326" height="271pt">
 	<h1>Nachos</h1>
 	<h3>/ˈnatʃəʊz/ noun</h3>
 	<h3>a dish of tortilla chips topped with melted cheese and often also with other savoury toppings.</h3>
@@ -17,7 +17,7 @@
 		<input name = "Full name" type = "text" size="25" maxlength = "30" placeholder="Please enter your name here." required>
 	</label></p>
 	<p><label>Email address:*
-		<input name = "Email adress" type = "email" size="25" maxlength = "30" placeholder="name@domain"required>
+		<input name = "Email adress" type = "email" size="25" maxlength = "30" placeholder="name@domain" required>
 	</label></p>
 	<p><label>Phone number:*
 		<input name = "Phone number" type = "tel" placeholder="(###) ###-####">
@@ -35,7 +35,7 @@
 		I want to receive news from World Cuisine
 	</label><br>
 	<hr>
-	<input type = "submit" value = "Submit">
+	<input type = "submit" value = "Create Account">
 	</form>
 	</body>
 </html>
