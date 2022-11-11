@@ -1,1 +1,51 @@
-//CSS Homepage
+<style type="text/css">
+		body 			{ background-color:#FAD7AC;
+					  height: 100%;
+					  font-family: helvetica;
+					  background-image: linear-gradient(180deg, #FAD7AC, #FFFFFF);  }
+
+		h1			{ text-align: center;
+					  font-size: 70px;
+					  color: #426E66;
+					  margin: auto;
+					  font-family: Garamond;}
+
+		button		{ width: 300px;
+					  height: 40px;
+					  background: #67AB9F;
+					  color: white;
+					  border: 1px solid #eee;
+					  border-radius: 4px;
+					  box-shadow: 5px 5px 5px #eee;
+					  font-family: Garamond;
+					  font-size: 19px; }
+
+		button:hover 	{ background: #426E66;}
+
+		img			{ border-radius:45px; }
+		
+		.first		{ margin-left: 250px;
+					  position: absolute; }
+
+		.second		{ margin-left: 600px;
+					  position: absolute; }
+
+		.third		{ margin-left: 950px;
+					  position: absolute; }
+
+		.fourth		{ margin-left: 250px;
+					  margin-top: 650px;
+					  margin-bottom: 700px;
+					  position: absolute; }
+
+		.fifth		{ margin-left: 600px;
+					  margin-top: 650px;
+					  position: absolute; }
+
+		.sixth		{ margin-left: 950px;
+					  margin-top: 650px;
+					  position: absolute; }
+		
+		section		{ padding-bottom: 1300px;}
+		
+	  	</style>
