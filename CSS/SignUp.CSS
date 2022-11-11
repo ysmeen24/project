@@ -30,4 +30,17 @@
 						  width: 380px; }
 
 			::placeholder	{ font-family: Courier new;}
+
+			hr 			{ border-color: #67AB9F}
+
+			.FormButton		{ width: 200px;
+						  height: 30px;
+						  margin-left: 150px;
+						  background: #67AB9F;
+						  color: white;
+						  border: 1px solid #eee;
+						  border-radius: 4px;
+						  box-shadow: 5px 5px 5px #eee; }
+
+			.FormButton:hover { background: #426E66;}
 		</style>
