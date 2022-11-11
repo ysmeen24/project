@@ -11,27 +11,26 @@
 						  font-size: 40px;
 						  color: #67AB9F;
 						  margin: auto;}
-			.Signup		{ margin-top: 30%;
+			.Signup			{ margin-top: 30%;
 						  margin-left: 38%;
 						  position: absolute; }
-			.Login		{ margin-top: 30%;
+			.Login			{ margin-top: 30%;
 						  margin-left: 52%;
 						  position: absolute; }
 
 			.Background		{ margin-top: 1.5%;
-						  margin-left: 20%; }
+						  margin-left: 21%; }
 
-			.Scrollup		{ margin-top: 93%;
-						  margin-left: 13%;
+			.Scrollup		{ margin-top: 1400px;
+						  margin-left: 170px;
 						  position: absolute; }
 
-			.Scrolldown		{ margin-top: 33%;
-						  margin-left: 13%;
-						  position: absolute; }
+			.Scrolldown		{ margin-top: 520px;
+						  margin-left: 170px;
+						  position: absolute;}
 
-			.Burger     	{ margin-top: 270px;
-						  margin-left: 10%;
-						  display: inline; }
+			.Burger     		{ margin-top: 250px;
+						  margin-left: 10%; }
 
 			.Aboutus		{ margin: 400px 350px; 
 						  position: absolute;
