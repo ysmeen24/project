@@ -1,1 +1,49 @@
-//CSS LogIn
+<style type="text/css">
+			div			{ border: #426E66 solid;
+						  padding: 20px 30px;
+						  background-color: #F2FFFE;
+						  margin: 100px 250px;
+						  position: absolute;
+						  font-family: Courier new;
+						  color: #666666; 
+						  font-size: 20px;}
+			h1			{ margin-top: 370px;
+						  margin-left: 930px;
+						  position: absolute;
+						  font-family: Garamond;
+						  color: #426E66;
+						  font-size: 70px;}
+			h3			{ margin-left: 930px;
+						  position: absolute;
+						  font-family: Garamond;
+						  color: #67AB9F;
+						  font-size: 30px;
+						  font-weight: lighter;}
+
+			img			{ margin-top: 30px;
+						  margin-left: 900px;
+						  position: absolute; }
+
+			.position1		{ margin-top: 440px;}
+
+			.position2		{ margin-top: 480px;
+						  width: 380px; }
+
+			::placeholder	{ font-family: Courier new;}
+
+			::value 		{ font-family: Courier new;}
+
+			hr 			{ border-color: #67AB9F}
+
+			.FormButton		{ width: 200px;
+						  height: 30px;
+						  margin-left: 90px;
+						  background: #67AB9F;
+						  color: white;
+						  border: 1px solid #eee;
+						  border-radius: 4px;
+						  box-shadow: 5px 5px 5px #eee; }
+
+			.FormButton:hover { background: #426E66;}
+			
+		</style>
