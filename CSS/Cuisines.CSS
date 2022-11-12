@@ -1,1 +1,69 @@
-//CSS Cuisines
+	.Title	{ background-color: #426E66;
+			  border-radius: 25px;
+			  text-align: center;
+			  font-size: 40pt;
+			  color: white;
+			  width: 450px;
+	        	  height: 75px;
+			  left: 750px;
+			  margin: auto;
+			  text-margin: auto;}
+		
+	div		{ background-color: #67AB9F;
+			  border-radius: 45px;
+			  font: helvetica;
+			  color: white;
+			  width: 450px;
+			  height: 300px;
+			  position: relative;
+			  top: 50px; }
+		
+	div header  { text-align: center;
+	      	  font-size: 40pt;
+	      	  font-weight: bold;
+	      	  position:relative;
+	      	  top:15px; }
+	      
+	div aside   { position: absolute;
+			  top : 100px;
+			  right: 25px; 
+			  width: 150px; }
+
+	div section { font-size: 20pt;
+			  position: relative;
+			  left: 40px;
+			  top: 0px;
+			  width: 150px;}
+		
+	div article { position: relative;
+			  left: 50px;
+			  top: -35px;}
+		
+	div section a{position: relative;
+			  color: white;
+			  top :-65px;
+			  text-decoration: none;}
+		
+	.first	{ position: absolute;
+			  top : 150px;
+			  left: 150px;}
+		
+	.second     { position: absolute;
+			  top: 150px;
+			  left: 750px;}
+		
+	.third      { position: absolute;
+			  top: 150px;
+			  right: 150px;}
+		
+	.fourth     { position: absolute;
+			  top:550px;
+			  left: 450px;}
+		
+	.fifth      { position: absolute;
+			  top: 550px;
+			  right: 450px;}
+
+	aside:hover	{ transform: scale(1.3);}
+
+	a:hover	{ color: #426E66;}
