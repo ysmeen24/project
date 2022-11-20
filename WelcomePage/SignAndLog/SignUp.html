@@ -2,9 +2,85 @@
 
 <html>
 	<head>
-		<meta charset= "utf-8">
+		<meta charset= "UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>Sign Up</title>
-		<link rel = "stylesheet" type="text/css" href = "https://ysmeen24.github.io/project/CSS/SignUp.CSS">
+		<!--<link rel = "stylesheet" type="text/css" href = "SignUp.CSS">-->
+<style>
+
+			div			{ border: #426E66 solid;
+						  padding: 20px 30px;
+						  background: #F2FFFE;
+						  margin: 50px 160px;
+						  position: absolute;
+						  font-family: Courier new;
+						  color: #666666; 
+						  font-size: 20px;}
+			h4 			{ font-family: Courier new;
+						  color: #666666;
+						  font-weight: lighter; }
+
+
+
+			h1			{ margin-top: 370px;
+						  margin-left: 930px;
+						  position: absolute;
+						  font-family: Garamond;
+						  color: #426E66;
+						  font-size: 70px;}
+
+			h3			{ margin-left: 930px;
+						  position: absolute;
+						  font-family: Garamond;
+						  color: #67AB9F;
+						  font-size: 30px;
+						  font-weight: lighter;}
+
+			img			{ margin-top: 30px;
+						  margin-left: 900px;
+						  position: absolute; }
+
+			.position1		{ margin-top: 440px;}
+
+			.position2		{ margin-top: 480px;
+						  width: 380px; }
+
+			::placeholder	{ font-family: Courier new;}
+
+			hr 			{ border-color: #67AB9F}
+
+			.FormButton		{ width: 200px;
+						  height: 30px;
+						  margin-left: 150px;
+						  background: #67AB9F;
+						  color: white;
+						  border: 1px solid #eee;
+						  border-radius: 4px;
+						  box-shadow: 5px 5px 5px #eee; }
+
+			.FormButton:hover { background: #426E66;}
+			.valid 		{ color: #67AB9F; }
+
+			.valid:before 	{ position: relative;
+  					    	  left: -35px;
+  					        content: "✔";}
+
+
+			.invalid 		{color: red;}
+
+			.invalid:before 	{position: relative;
+  						 left: -35px;
+  						 content: "✖";}
+
+			#message 		{display:none;
+  						 background: #F2FFFE;
+ 						 color: #000;
+ 						 position: relative;
+ 						 padding: 20px;
+ 						 margin-top: 10px;}
+
+			#message p 		{ padding: 10px 35px;
+  						  font-size: 18px;}
+</style>
 	</head>
 	<body>
 	<img src="https://ysmeen24.github.io/project/Images/background2.png" alt="Nachos" width="400" height="350">
@@ -24,10 +100,10 @@
 		<input name = "Phone number" type = "tel" size="70" placeholder="(###) ###-####">
 	</label></p>
 	<p><label>Password:*<br>
-		<input name = "Password" type = "password" size="70" placeholder="Please enter your password here." required>
+		<input type = "password" size="70" placeholder="Please enter your password here." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="psw" name="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 	</label></p>
 	<p><label>Repeat password:*<br>
-		<input name = "Password" type = "password" size="70" placeholder="Please re-enter your password here." required>
+		<input name = "Password" type = "password" size="70" placeholder="Please re-enter your password here." id="confirm_password" required>
 	</label></p>
 	<label><input name = "I accept" type = "radio" value ="Conditions" required>
 		I accept terms&conditions
@@ -36,7 +112,76 @@
 		I want to receive news from World Cuisine
 	</label><br>
 	<hr>
-	<input type = "submit" value = "Create Account" class="FormButton">
-	</form></div>
+	<input type = "submit" value = "Create Account" class="FormButton"></form>
+	<article id="message">
+	<h4>Password must contain the following:</h4>
+  	<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  	<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  	<p id="number" class="invalid">A <b>number</b></p>
+  	<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+	</article>
+	</div>
+<script>
+	var myInput = document.getElementById("psw");
+	var letter = document.getElementById("letter");
+	var capital = document.getElementById("capital");
+	var number = document.getElementById("number");
+	var length = document.getElementById("length");
+
+	myInput.onfocus = function()	{ document.getElementById("message").style.display = "block";}
+
+
+	myInput.onblur = function() { document.getElementById("message").style.display = "none"; }
+
+
+	myInput.onkeyup = function() {
+  		var lowerCaseLetters = /[a-z]/g;
+  		if(myInput.value.match(lowerCaseLetters)) {  
+    			letter.classList.remove("invalid");
+    			letter.classList.add("valid");}
+
+		 else {
+			letter.classList.remove("valid");
+    			letter.classList.add("invalid");}
+  
+
+  		var upperCaseLetters = /[A-Z]/g;
+  		if(myInput.value.match(upperCaseLetters)) {  
+    			capital.classList.remove("invalid");
+    			capital.classList.add("valid");}
+
+		else {
+    			capital.classList.remove("valid");
+    			capital.classList.add("invalid");}
+
+ 		var numbers = /[0-9]/g;
+  		if(myInput.value.match(numbers)) {  
+    			number.classList.remove("invalid");
+    			number.classList.add("valid"); } 
+
+		else {
+			number.classList.remove("valid");
+    			number.classList.add("invalid");}
+  
+  		if(myInput.value.length >= 8) {
+    			length.classList.remove("invalid");
+    			length.classList.add("valid");}
+
+		else {
+    			length.classList.remove("valid");
+    			length.classList.add("invalid"); }
+	}
+	var password = document.getElementById("psw"), confirm_password = document.getElementById("confirm_password");
+
+	function validatePassword(){
+		if(password.value != confirm_password.value) {
+    			confirm_password.setCustomValidity("Passwords Don't Match");}
+		 else {
+    			confirm_password.setCustomValidity('');}
+	}
+	
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;
+	</script>
 	</body>
 </html>
