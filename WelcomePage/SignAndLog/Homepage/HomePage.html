@@ -5,35 +5,6 @@
         	<meta charset= "utf-8">
         	<title>Home page</title>
 		<link rel = "stylesheet" type="text/css" href = "https://ysmeen24.github.io/project/CSS/Homepage.CSS">
-	  <script>
-	  document.addEventListener('DOMContentLoaded', function(){
-		(function(){
-        		var sr = document.querySelectorAll('.my-star');
-        		var i = 0;
-
-        		while (i < sr.length){
-				sr[i].addEventListener('click', function(){
-	                var cs = parseInt(this.getAttribute("data-star"));
-	                var pre = cs;
-                  while(1 <= pre){
-                    if(!document.querySelector('.star-'+pre).classList.contains('is-active')){
-                        document.querySelector('.star-'+pre).classList.add('is-active');}
-                    --pre;}
-
-                var succ = cs+1;
-
-                while(5 >= succ){
-                    if(document.querySelector('.star-'+succ).classList.contains('is-active')){
-                        document.querySelector('.star-'+succ).classList.remove('is-active');}
-                    ++succ;}
-            })
-            i++;
-        }
-
-    })();
-
-})
-</script>
     	</head>
 	<body>
 		<h1 class="head">Choose a cuisine you wish to eat from!</h1>
