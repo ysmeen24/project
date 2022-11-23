@@ -5,9 +5,38 @@
         	<meta charset= "utf-8">
         	<title>Home page</title>
 		<link rel = "stylesheet" type="text/css" href = "https://ysmeen24.github.io/project/CSS/Homepage.CSS">
+	  <script>
+	  document.addEventListener('DOMContentLoaded', function(){
+		(function(){
+        		var sr = document.querySelectorAll('.my-star');
+        		var i = 0;
+
+        		while (i < sr.length){
+				sr[i].addEventListener('click', function(){
+	                var cs = parseInt(this.getAttribute("data-star"));
+	                var pre = cs;
+                  while(1 <= pre){
+                    if(!document.querySelector('.star-'+pre).classList.contains('is-active')){
+                        document.querySelector('.star-'+pre).classList.add('is-active');}
+                    --pre;}
+
+                var succ = cs+1;
+
+                while(5 >= succ){
+                    if(document.querySelector('.star-'+succ).classList.contains('is-active')){
+                        document.querySelector('.star-'+succ).classList.remove('is-active');}
+                    ++succ;}
+            })
+            i++;
+        }
+
+    })();
+
+})
+</script>
     	</head>
 	<body>
-		<h1>Choose a cuisine you wish to eat from!</h1>
+		<h1 class="head">Choose a cuisine you wish to eat from!</h1>
         	<div class="first">
             <br>
         	<img src="https://images.unsplash.com/photo-1566950616521-335084348663?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"  alt="JapaneseFood"  width="300px" height="550px">
@@ -65,6 +94,14 @@
             </a>
         <br>
         </div>
+	  <h1 class="foot">Please rate our website :D!</h1>
+	  <p class="star-rating">
+    	  <i class="my-star star-1" data-star="1"></i>
+    	  <i class="my-star star-2" data-star="2"></i>	
+    	  <i class="my-star star-3" data-star="3"></i>
+    	  <i class="my-star star-4" data-star="4"></i>
+	  <i class="my-star star-5" data-star="5"></i></p>
+
 	  <section></section>
 
     </body>
