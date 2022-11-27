@@ -92,19 +92,19 @@
 	<h4>Sign Up</h4>
 	<hr>
 	<p><label>Full name:*<br>
-		<input name = "Full name" type = "text" size="70" maxlength = "30" class="font" placeholder="Please enter your name here." required>
+		<input id = "name" name = "Full name" type = "text" size="70" maxlength = "30" class="font" placeholder="Please enter your name here." required>
 	</label></p>
 	<p><label>Email address:*<br>
-		<input name = "Email adress" type = "email" size="70" maxlength = "30" placeholder="name@domain" required>
+		<input id = "email" name = "Email adress" type = "email" size="70" maxlength = "30" placeholder="name@domain" required>
 	</label></p>
 	<p><label>Phone number:*<br>
-		<input name = "Phone number" type = "tel" size="70" placeholder="(###) ###-####">
+		<input id = "number" name = "Phone number" type = "tel" size="70" placeholder="(###) ###-####">
 	</label></p>
 	<p><label>Password:*<br>
-		<input type = "password" size="70" placeholder="Please enter your password here." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="psw" name="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+		<input id = "pass" type = "password" size="70" placeholder="Please enter your password here." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="psw" name="psw" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 	</label></p>
 	<p><label>Repeat password:*<br>
-		<input name = "Password" type = "password" size="70" placeholder="Please re-enter your password here." id="confirm_password" required>
+		<input id = "re-pass" name = "Password" type = "password" size="70" placeholder="Please re-enter your password here." id="confirm_password" required>
 	</label></p>
 	<label><input name = "I accept" type = "radio" value ="Conditions" required>
 		I accept terms&conditions
