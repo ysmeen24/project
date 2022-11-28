@@ -1,17 +1,24 @@
 			div			{ border: #426E66 solid;
 						  padding: 20px 30px;
-						  background-color: #F2FFFE;
+						  background: #F2FFFE;
 						  margin: 50px 160px;
 						  position: absolute;
 						  font-family: Courier new;
 						  color: #666666; 
 						  font-size: 20px;}
+			h4 			{ font-family: Courier new;
+						  color: #666666;
+						  font-weight: lighter; }
+
+
+
 			h1			{ margin-top: 370px;
 						  margin-left: 930px;
 						  position: absolute;
 						  font-family: Garamond;
 						  color: #426E66;
 						  font-size: 70px;}
+
 			h3			{ margin-left: 930px;
 						  position: absolute;
 						  font-family: Garamond;
@@ -42,3 +49,25 @@
 						  box-shadow: 5px 5px 5px #eee; }
 
 			.FormButton:hover { background: #426E66;}
+			.valid 		{ color: #67AB9F; }
+
+			.valid:before 	{ position: relative;
+  					    	  left: -35px;
+  					        content: "✔";}
+
+
+			.invalid 		{color: red;}
+
+			.invalid:before 	{position: relative;
+  						 left: -35px;
+  						 content: "✖";}
+
+			#message 		{display:none;
+  						 background: #F2FFFE;
+ 						 color: #000;
+ 						 position: relative;
+ 						 padding: 20px;
+ 						 margin-top: 10px;}
+
+			#message p 		{ padding: 10px 35px;
+  						  font-size: 18px;}
