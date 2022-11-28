@@ -1,4 +1,5 @@
-  var helpText = document.getElementById("hekpText");
+
+var helpText = document.getElementById("helpText");
 
   function init()
   {
