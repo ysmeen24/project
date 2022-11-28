@@ -15,7 +15,7 @@ var helpText = document.getElementById("helpText");
 			function() {helpText.innerHTML = "Enter your Phone Number in this textbox.";},
 			false);
 			
-			document.getElementById("psw").addEventListener("focus",
+			document.getElementById("message").addEventListener("focus",
 			function() {helpText.innerHTML = "Create a password in this textbox.";},
 			false);
 
